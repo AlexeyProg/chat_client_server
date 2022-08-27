@@ -62,16 +62,3 @@ void Server::sendToUser(QString str)
         item->write(data);
     }
 }
-
-void Server::takeImage()
-{
-    bool flag;
-    QByteArray ba;
-    QDataStream in(ba);
-    QImage i;
-    in >> i >> flag;
-    if(flag)
-    {
-        qDebug() << " Good data";
-    }
-}
