@@ -18,8 +18,6 @@ public:
     void sendToUser(QString str);
     QVector<QTcpSocket*> mSockets;
     QByteArray data;
-    QString name = "Server";
-    void takeImage();
 
 
 signals:
